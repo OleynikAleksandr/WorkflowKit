@@ -4,12 +4,12 @@
 ```json
 {
   "schema_version": 1,
-  "plan_revision": 152,
+  "plan_revision": 154,
   "project_id": "98dbae8d-f53b-4acc-af12-d094fe016cee",
   "project_name": "WorkflowKit",
   "scope_id": "push-after-docs-1.5.5-20261004",
   "execution_scope_status": "ACTIVE",
-  "delivery_status": "IN_PROGRESS",
+  "delivery_status": "READY_FOR_ACCEPTANCE",
   "objective": "Push на GitHub только после DOCS текущего плана: pre-push hook Workflow Kit 1.5.5.",
   "acceptance_criteria": [
     "Push до завершения DOCS текущего плана отклоняется, после DOCS проходит",
@@ -306,13 +306,16 @@
         "После managed commit origin/main синхронизирован с новым HEAD; затем репозиторий переводится в архив вне этого плана"
       ],
       "expected_commit_message": "docs: сообщить о переезде Workflow Kit в Project Web Pilot",
-      "implementation_status": "TODO",
-      "commit_status": "PENDING",
+      "implementation_status": "DONE",
+      "commit_status": "DONE",
       "commit_ref": {
         "scope_id": "push-after-docs-1.5.5-20261004",
         "task_id": "T005",
         "role": "implementation"
-      }
+      },
+      "actual_files": [
+        "README.md"
+      ]
     }
   ],
   "blocked_reason": null,
@@ -330,10 +333,10 @@
 ## Состояние
 
 Execution Scope Status: ACTIVE
-Delivery Status: IN_PROGRESS
+Delivery Status: READY_FOR_ACCEPTANCE
 Scope: push-after-docs-1.5.5-20261004
 Current Task: нет
-Revision: 152
+Revision: 154
 
 ## Цель
 
@@ -366,8 +369,8 @@ Push на GitHub только после DOCS текущего плана: pre-p
   - Git Commit: [DONE] docs: синхронизировать WorkflowKit с Web Pilot 0.6.95
   - Reference: push-after-docs-1.5.5-20261004 / T004 / implementation
   - Файлы: README.md, docs/PRODUCT.md, docs/architecture/OVERVIEW.md, docs/modules/workflow-kit-package.md, docs/DOCUMENTATION_INDEX.md
-- [TODO] T005: Сообщить о переезде пакета в Project Web Pilot и опубликовать main — Ожидает
-  - Git Commit: [PENDING] docs: сообщить о переезде Workflow Kit в Project Web Pilot
+- [DONE] T005: Сообщить о переезде пакета в Project Web Pilot и опубликовать main — Завершено
+  - Git Commit: [DONE] docs: сообщить о переезде Workflow Kit в Project Web Pilot
   - Reference: push-after-docs-1.5.5-20261004 / T005 / implementation
   - Файлы: README.md
 

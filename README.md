@@ -1,3 +1,5 @@
+> **Репозиторий переведён в архив (только чтение).** С 06.10.2026 Workflow Kit развивается как пакет `packages/workflow-kit` в репозитории [Project Web Pilot](https://github.com/OleynikAleksandr/Project-Web-Pilot/tree/main/packages/workflow-kit); история этого репозитория перенесена туда (`git subtree`). Изменения, задачи и выпуски — только там.
+
 # WorkflowKit
 
 WorkflowKit — canonical Node.js package `@webpilot/workflow-kit` для управления состоянием проекта, current plan, recovery context и lifecycle задач в одном Git checkout/worktree.
